@@ -31,3 +31,52 @@ let isover18 = true;
 console.log("über 18?", isover18);
 let age = 17;
 console.log("age über 18", age>18);
+
+let zahlenListe = [1,2,22,33,2,8];
+console.log(zahlenListe);
+let nameListe = ["Jamie", "John"];
+console.log(nameListe);
+console.log(nameListe[1]);
+console.log("Anzahl der Namen in der Liste:",nameListe.length);
+
+let benutzer = {
+    Vorname: "Jamie",
+    Nachname: "Anders",
+    Alter: "23",
+};
+console.log("Benutzer:", benutzer);
+console.log("Benutzer Alter:", benutzer.Alter);
+benutzer.bestzeit =200;
+benutzer["bestzeit ever"] = 200;
+console.log(benutzer);
+
+// Benutzer Eingabe
+
+// let alter = prompt("Wie alt bist du?");
+// console.log("Du bist", alter, "Jahre alt");
+
+// console.log("Über 18?", alter >18);
+// if (alter > 18) {
+//     console.log("Du darfts hinein..");
+// }
+// else {console.log("noch nicht !8!")};
+
+// Auskommentieren ist Steuerung und #
+
+for (let i=1; i<=10; i++) {
+    console.log("Wert von i", i);
+}
+
+function showage(birthYear) {
+    let ago = 2018 - birthYear;
+    console.log("Du bist", age, "Jahre alt");
+
+} 
+showage(1991)
+showage(1948)
+
+function calcAge(birthYear) {
+    return 2018 - birthYear;
+}
+
+console.log("Du bist", calcAge(1991), "alt.")
